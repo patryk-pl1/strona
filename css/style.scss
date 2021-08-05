@@ -1,0 +1,74 @@
+$color-primary: #e8491d;
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: $color-primary 3px solid;
+
+    a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+
+    #branding {
+        float: left;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    nav {
+       float: right; 
+       margin-top: 10px;
+    }
+
+    .highlight, .current a {
+        color: $color-primary;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #cccccc;
+        font-weight: bold;
+    }
+}/* header */
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url('../img/monitor2.jpg') no-repeat 0 -100px;
+}
